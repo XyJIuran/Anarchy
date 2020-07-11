@@ -4,8 +4,10 @@ body {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
-  color: #222222;
+  color: #ffffff;
   background-color: #f2f4f6;
+  /*Размер шапки: Ширина 2560px*Высота 1080px*/
+  background-image: url("img/hero-bg.jpg");
   background-image: url("img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -30,6 +32,7 @@ body {
 
 .page-header a {
   margin-left: 56px;
+  /*Цвет контактов*/
   color: #288be6;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -38,12 +41,12 @@ body {
 
 .header-email {
   padding-left: 30px;
-  background-image: url("img/icon-email-header.svg");
+  background-image: url("img/icon-email-footer.svg");
 }
 
 .header-phone {
   padding-left: 25px;
-  background-image: url("img/icon-phone-header.svg");
+  background-image: url("img/icon-phone-footer.svg");
 }
 
 .hero-image {
@@ -57,7 +60,7 @@ body {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
+  font-family: "Impact" "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 88px;
   line-height: 96px;
   font-weight: 400;
@@ -73,10 +76,20 @@ body {
   margin: 0 0 120px;
 }
 
+.container2 {
+	color: #000000;
+}
+
+.top4k {
+	color: #A60709;
+}
+
 .subheading {
   margin: 0 0 56px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
   font-size: 64px;
+  /*Статистика КВ*/
+  color: #000000;
   line-height: 80px;
   font-weight: 400;
   text-align: center;
