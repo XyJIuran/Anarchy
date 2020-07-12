@@ -7,10 +7,14 @@ body {
   color: #ffffff;
   background-color: #f2f4f6;
   /*Размер шапки: Ширина 2560px*Высота 1080px*/
-  background-image: url("img/hero-bg.jpg");
-  background-image: url("img/hero-bg.jpg");
+  background-image: url("img/hero-bg2.jpg");
+  background-image: url("img/hero-bg2.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.anarchy {
+	opacity: 0;
 }
 
 .container {
@@ -31,10 +35,10 @@ body {
 }
 
 .page-header a {
-  margin-left: 56px;
-  /*Цвет контактов*/
-  color: #288be6;
-  font-weight: 600;
+  margin-left: 66px;
+  /*Цвет контактов - #288be6*/
+  color: #ffffff;
+  font-weight: 700;
   opacity: .8;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -52,9 +56,9 @@ body {
 .header-email:hover {
 	transition: 5s all;
 	transform: scale(0.5);
-	background-color: red;
+	background-color: #0FC0FC;
 	border: 2px solid #ffffff;
-	opacity: .4;
+	color: #ffffff;
 }
 
 .header-phone {
@@ -67,9 +71,9 @@ body {
 .header-phone:hover {
 	transition: 5s all;
 	transform: rotate(180deg);
-	background-color: red;
+	background-color: #0FC0FC;
 	border: 2px solid #ffffff;
-	opacity: .4;
+	color: #ffffff;
 }
 
 .hero-image {
@@ -83,10 +87,11 @@ body {
 
 .heading {
   margin: 0 0 16px;
-  font-family: "Impact" "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 88px;
-  line-height: 96px;
+  font-family: "Trattatello" "Impact" "Old Standard TT", "Times", "Times New Roman", serif;
+  font-size: 150px;
+  line-height: 496px;
   font-weight: 400;
+  opacity: 0;
 }
 
 li {
