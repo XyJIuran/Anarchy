@@ -34,19 +34,42 @@ body {
   margin-left: 56px;
   /*Цвет контактов*/
   color: #288be6;
+  font-weight: 600;
+  opacity: .8;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .header-email {
+	
+  border-radius: 10px;
+  padding: 5px 5px 5px 5px;
   padding-left: 30px;
   background-image: url("img/icon-email-footer.svg");
 }
 
+.header-email:hover {
+	transition: 5s all;
+	transform: scale(0.5);
+	background-color: red;
+	border: 2px solid #ffffff;
+	opacity: .4;
+}
+
 .header-phone {
-  padding-left: 25px;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 30px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.header-phone:hover {
+	transition: 5s all;
+	transform: rotate(180deg);
+	background-color: red;
+	border: 2px solid #ffffff;
+	opacity: .4;
 }
 
 .hero-image {
@@ -64,6 +87,44 @@ body {
   font-size: 88px;
   line-height: 96px;
   font-weight: 400;
+}
+
+li {
+	font-size: 20px;
+	color: #000000;
+	font-weight: 800;
+}
+
+.name {
+	color: #0C69B4;
+}
+
+.donate {
+	font-size: 14px;
+	color: #000000;
+}
+
+.cw {
+	color: #747474;
+	background-color: #e4e4e4;
+	border: 1px solid #434343;
+	font-size: 20px;
+	margin: 10px;
+	text-align: center;
+}
+
+.win {
+	background-color: #00D500;
+	color: #ffffff;
+	text-align: center;
+}
+
+.loss {
+	background-color: #FF0800;
+}
+
+.draw {
+	background-color: #A2ADD0;
 }
 
 .hero-image p {
@@ -90,7 +151,7 @@ body {
   font-size: 64px;
   /*Статистика КВ*/
   color: #000000;
-  line-height: 80px;
+  line-height: 50px;
   font-weight: 400;
   text-align: center;
 }
@@ -98,6 +159,15 @@ body {
 .user-image {
   margin: 0 0 32px;
   text-align: center;
+}
+
+.news {
+	font-size: 30px;
+	color: #0C69B4;
+}
+
+.news2 {
+	font-size: 20px;
 }
 
 .intro h3,
@@ -171,21 +241,29 @@ body {
   margin: 0 0 24px;
 }
 
-.button {
+.button { /*Статистика КВ*/
   padding: 6px 20px;
   display: inline-block;
   vertical-align: baseline;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
-  background-color: #288be6;
+  background-color: #288be6; 
   color: #ffffff;
+}
+
+.button:hover {
+	transition: 10s all;
+	transform: scale(0.5);
+	background-color: #000000;
+	opacity: .4;
 }
 
 .page-footer {
   padding: 40px 0;
-  background-color: #00417d;
+  background-color: #000000; /* Старый фон футера: #00417d*/
   color: #ffffff;
+  font-weight: 600;
 }
 
 .page-footer a {
