@@ -154,6 +154,20 @@ li {
 	color: #A60709;
 }
 
+.team {
+	font-size: 20px;
+	color: #0C69B4;
+}
+
+.teamer {
+	white-space: pre;
+	color: #000000;
+}
+
+.number {
+	color: #D40000;
+}
+
 .subheading {
   margin: 0 0 56px;
   font-family: "Old Standard TT", "Times", "Times New Roman", serif;
@@ -256,6 +270,16 @@ li {
   vertical-align: baseline;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #288be6; 
+  color: #ffffff;
+}
+
+.lvk {
+  padding: 6px 20px;
+  display: inline-block;
+  vertical-align: baseline;
+  text-decoration: none;
   border-radius: 4px;
   background-color: #288be6; 
   color: #ffffff;
