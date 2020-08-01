@@ -1,124 +1,139 @@
 body {
-  margin: 0;
-  min-width: 960px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-  color: #ffffff;
-  background-color: #f2f4f6;
-  /*Размер шапки: Ширина 2560px*Высота 1080px*/
-  background-image: url("img/hero-bg2.jpg");
-  background-image: url("img/hero-bg2.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
+	font-size: 10px;
+	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
 
-.anarchy {
-	opacity: 0;
+nav { /** Начало горизонтального меню **/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 20vh;
 }
 
-.container {
-  max-width: 928px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
-
-.page-header {
-  margin: 0 0 160px;
-  padding: 32px 0 32px;
-}
-
-.page-header .container,
-.page-footer .container {
-  max-width: 1408px;
-  text-align: right;
-}
-
-.page-header a {
-  margin-left: 66px;
-  /*Цвет контактов - #288be6*/
-  color: #ffffff;
-  font-weight: 700;
-  opacity: .8;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.header-email {
-	
-  border-radius: 10px;
-  padding: 5px 5px 5px 5px;
-  padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
-}
-
-.header-email:hover {
-	transition: 5s all;
-	transform: scale(0.5);
-	background-color: #0FC0FC;
-	border: 2px solid #ffffff;
-	color: #ffffff;
-}
-
-.header-phone {
-  border-radius: 10px;
-  padding: 5px;
-  padding-left: 30px;
-  background-image: url("img/icon-phone-footer.svg");
-}
-
-.header-phone:hover {
-	transition: 5s all;
-	transform: rotate(180deg);
-	background-color: #0FC0FC;
-	border: 2px solid #ffffff;
-	color: #ffffff;
-}
-
-.hero-image {
-  margin-bottom: 620px;
-}
-
-.hero-image .container {
-  max-width: 1408px;
-  text-align: center;
-}
-
-.heading {
-  margin: 0 0 16px;
-  font-family: "Trattatello" "Impact" "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 150px;
-  line-height: 496px;
-  font-weight: 400;
-  opacity: 0;
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 li {
-	font-size: 20px;
-	color: #000000;
-	font-weight: 800;
+	padding: 0 20px;
+	color: #243F6A;
+	text-shadow: 2px 2px 4px #000;
+	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+	font-size: 25px;
+	font-weight: 700;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	transition: .5s;
+	list-style-type: none;
 }
 
-.name {
-	color: #0C69B4;
+li a {
+	text-decoration: none;
+	color: #243F6A;
+	font-size: 25px;
+	transition: .5s;
+	padding: 10px;
 }
 
-.donate {
-	font-size: 14px;
-	color: #000000;
+ul:hover li a {
+	filter: blur(5px);
 }
 
-.cw {
+ul:hover li a:hover { /** Конец горизонтального меню **/
+	font-size: 30px;
+	filter: blur(0px);
+	background-color: #FFEBB5;
+}
+
+.sidebar {
+	position: absolute;
+	top: 700px;
+	left: 10px;
+	width: 300px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 1;	
+}
+
+.sidebar2 {
+	position: absolute;
+	top: 700px;
+	left: 1540px;
+	width: 300px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 1;
+}
+
+.main {
+	position: absolute;
+	top: 700px;
+	left: 330px;
+	width: 1190px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 2;
+}
+
+.footer {
+	position: absolute;
+	top: 1720px;
+	margin-bottom: 15px;
+	left: 10px;
+	width: 98.7%;
+	height: 200px;
+	border: 2px solid #7C8CA6;
+	z-index: 2;
+	background-color: #000;
+	color: #fff;
+	font-size: 30px;
+}
+
+.top5 { /** Заголовок первого Сайдбара  **/
+	font-size: 25px;
+	/**color: #243F6A;**/
+	color: #263C6A;
+	font-weight: 1000;
+	text-shadow: 2px 2px 4px #000;
+	opacity: .6;
+}
+
+.top {  /** Заголовок топов **/
+	font-size: 18px;
+	color: #A60709;
+	font-family: Marker Felt;
+}
+.name { /** Размер содержимого топ5 **/
+	font-size: 18px;
+}
+
+.nick { /** Ники в топ5 **/
+	font-family: FF Trixie, Marker Felt;
+	color: #0C69B4; 
+	font-weight: 700;
+}
+.number { /** Цифры из топ5 **/
+	font-size: 16px;
+	font-family: Marker Felt;
+}
+.description { /** Описание внизу топ5 **/
+	font-size: 12px;
+	font-family: Marker Felt;
+	color: #A60709;
+}
+
+.cw { /** Начало "5 последних CW" **/
 	color: #747474;
 	background-color: #e4e4e4;
 	border: 1px solid #434343;
-	font-size: 20px;
+	font-size: 14px;
 	margin: 10px;
 	text-align: center;
 }
 
-.win {
+.win { 
 	background-color: #00D500;
 	color: #ffffff;
 	text-align: center;
@@ -132,187 +147,36 @@ li {
 	background-color: #A2ADD0;
 }
 
-.names {
+.names { /** Конец "5 последних CW" **/
 	color: #305868;
 }
 
-.hero-image p {
-  margin: 0;
-  font-size: 32px;
-  line-height: 48px;
+.news { /** Начало новости **/
+	font-size: 12px;
 }
 
-.intro {
-  margin: 0 0 120px;
+.colordata { /** Конец новости **/
+	color: #D40000;
+	font-family: Marker Felt;
 }
 
-.container2 {
-	color: #000000;
-}
 
-.top4k {
-	color: #A60709;
+.team { /** Начало предворительного состава **/
+	font-size: 16px;
+	font-family: Marker Felt;
 }
-
-.team {
-	font-size: 20px;
-	color: #0C69B4;
-}
-
-.teamer {
-	white-space: pre;
-	color: #000000;
-}
-
-.number {
+.size-number {  /** Конец предворительного состава **/
+	font-size: 16px;
 	color: #D40000;
 }
-
-.subheading {
-  margin: 0 0 56px;
-  font-family: "Old Standard TT", "Times", "Times New Roman", serif;
-  font-size: 64px;
-  /*Статистика КВ*/
-  color: #000000;
-  line-height: 50px;
-  font-weight: 400;
-  text-align: center;
+.click { /** Требование ЛВК начало **/
+	color: #263C6A;
+	font-family: Marker Felt;
 }
 
-.user-image {
-  margin: 0 0 32px;
-  text-align: center;
-}
-
-.news {
-	font-size: 30px;
-	color: #0C69B4;
-}
-
-.news2 {
-	font-size: 20px;
-}
-
-.intro h3,
-.portfolio h3 {
-  margin: 0 0 12px;
-  font-size: 28px;
-  line-height: 40px;
-  font-weight: 500;
-}
-
-.intro p {
-  margin: 0 0 32px;
-}
-
-.skills-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.level {
-  margin: 4px 0 16px;
-  padding: 0;
-  height: 14px;
-  font-size: 0;
-  background-color: #ffffff;
-  border: 1px solid #86c3fa;
-  border-radius: 8px;
-}
-
-.level div {
-  margin: 1px;
-  height: 12px;
-  background-color: #288be6;
-  border-radius: 6px;
-}
-
-.portfolio {
-  margin: 0 0 120px;
-}
-
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
-  text-align: center;
-}
-
-.projects p {
-  margin: 0 0 24px;
-}
-
-.button { /*Статистика КВ*/
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6; 
-  color: #ffffff;
-}
-
-.lvk {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  border-radius: 4px;
-  background-color: #288be6; 
-  color: #ffffff;
-}
-
-.button:hover {
-	transition: 10s all;
-	transform: scale(0.5);
-	background-color: #000000;
-	opacity: .4;
-}
-
-.page-footer {
-  padding: 40px 0;
-  background-color: #000000; /* Старый фон футера: #00417d*/
-  color: #ffffff;
-  font-weight: 600;
-}
-
-.page-footer a {
-  margin-left: 56px;
-  color: inherit;
-  text-decoration: none;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email-footer.svg");
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone-footer.svg");
+.clicker { /** Требование ЛВК конец **/
+	color: #263C6A;
+	font-family: Marker Felt;
+	font-size: 16px;
+	font-weight: 800;
 }
