@@ -3,11 +3,15 @@ body {
 	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
 
+header {
+	padding-top: 15px;
+}
+
 nav { /** Начало горизонтального меню **/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 10vh;
+	min-height: 5vh;
 }
 
 ul {
@@ -45,4 +49,137 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	font-size: 30px;
 	filter: blur(0px);
 	background-color: #FFEBB5;
+}
+ .sidebar {
+	position: absolute;
+	top: 700px;
+	left: 10px;
+	width: 300px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 1;	
+ }
+ 
+ .sidebar2 {
+	position: absolute;
+	top: 700px;
+	left: 1540px;
+	width: 300px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 1;
+}
+
+.main {
+	position: absolute;
+	top: 700px;
+	left: 330px;
+	width: 1190px;
+	height: 1000px;
+	border: 2px solid #7C8CA6;
+	z-index: 2;
+}
+
+.footer {
+	position: absolute;
+	top: 1720px;
+	margin-bottom: 15px;
+	left: 10px;
+	width: 95.6%;
+	height: 200px;
+	border: 2px solid #7C8CA6;
+	z-index: 2;
+	background-color: #000;
+	color: #fff;
+	font-size: 30px;
+}
+
+.top5 { /** Заголовок первого Сайдбара  **/
+	font-size: 25px;
+	/**color: #243F6A;**/
+	color: #263C6A;
+	font-weight: 1000;
+	text-shadow: 2px 2px 4px #000;
+	opacity: .6;
+}
+
+.top {  /** Заголовок топов **/
+	font-size: 18px;
+	color: #A60709;
+	font-family: Marker Felt;
+}
+.name { /** Размер содержимого топ5 **/
+	font-size: 18px;
+}
+
+.nick { /** Ники в топ5 **/
+	font-family: FF Trixie, Marker Felt;
+	color: #0C69B4; 
+	font-weight: 700;
+}
+.number { /** Цифры из топ5 **/
+	font-size: 16px;
+	font-family: Marker Felt;
+}
+.description { /** Описание внизу топ5 **/
+	font-size: 12px;
+	font-family: Marker Felt;
+	color: #A60709;
+}
+
+.cw { /** Начало "5 последних CW" **/
+	color: #747474;
+	background-color: #e4e4e4;
+	border: 1px solid #434343;
+	font-size: 14px;
+	margin: 10px;
+	text-align: center;
+}
+
+.win { 
+	background-color: #00D500;
+	color: #ffffff;
+	text-align: center;
+}
+
+.loss {
+	background-color: #FF0800;
+}
+
+.draw {
+	background-color: #A2ADD0;
+}
+
+.names { /** Конец "5 последних CW" **/
+	color: #305868;
+}
+
+.news { /** Начало новости **/
+	font-size: 12px;
+}
+
+.colordata { /** Конец новости **/
+	color: #D40000;
+	font-family: Marker Felt;
+}
+
+
+.team { /** Начало предворительного состава **/
+	font-size: 16px;
+	font-family: Marker Felt;
+}
+.size-number {  /** Конец предворительного состава **/
+	font-size: 16px;
+	color: #D40000;
+}
+.click { /** Требование ЛВК начало **/
+	color: #263C6A;
+	font-family: Marker Felt;
+}
+
+.clicker { /** Требование ЛВК конец **/
+	color: #263C6A;
+	font-family: Marker Felt;
+	font-size: 16px;
+	font-weight: 800;
 }
