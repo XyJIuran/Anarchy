@@ -53,7 +53,7 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
  .sidebar {
 	position: absolute;
 	top: 700px;
-	left: 10px;
+	left: 200px;
 	width: 300px;
 	height: 1000px;
 	border: 2px solid #7C8CA6;
@@ -63,7 +63,7 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
  .sidebar2 {
 	position: absolute;
 	top: 700px;
-	left: 1540px;
+	left: 1360px;
 	width: 300px;
 	height: 1000px;
 	border: 2px solid #7C8CA6;
@@ -73,19 +73,19 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 .main {
 	position: absolute;
 	top: 700px;
-	left: 330px;
-	width: 1190px;
-	height: 1000px;
+	left: 530px;
+	width: 800px;
+	height: 1400px;
 	border: 2px solid #7C8CA6;
 	z-index: 2;
 }
 
 .footer {
 	position: absolute;
-	top: 1720px;
+	top: 2120px;
 	margin-bottom: 15px;
-	left: 10px;
-	width: 1830px;
+	left: 200px;
+	width: 1460px;
 	height: 200px;
 	border: 2px solid #7C8CA6;
 	z-index: 2;
