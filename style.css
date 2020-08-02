@@ -20,7 +20,7 @@ ul {
 	align-items: center;
 }
 
-li {
+ul li {
 	padding: 0 20px;
 	color: #243F6A;
 	text-shadow: 2px 2px 4px #000;
@@ -50,14 +50,16 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	filter: blur(0px);
 	background-color: #FFEBB5;
 }
- .sidebar {
+ .sidebar1 {
 	position: absolute;
 	top: 700px;
 	left: 200px;
 	width: 300px;
 	height: 1000px;
-	border: 2px solid #7C8CA6;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
 	z-index: 1;	
+	background-color: hsla(0, 0%, 84%, 0.15);
  }
  
  .sidebar2 {
@@ -66,18 +68,34 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	left: 1360px;
 	width: 300px;
 	height: 1000px;
-	border: 2px solid #7C8CA6;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
 	z-index: 1;
+	background-color: hsla(0, 0%, 84%, 0.15);
 }
 
+/*.sidebar3 {
+	position: absolute;
+	top: 800px;
+	left: 630px;
+	width: 600px;
+	height: 300px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
+	z-index: 1;
+	background-color: hsla(0, 0%, 84%, 0.15);
+}
+*/
 .main {
 	position: absolute;
 	top: 700px;
 	left: 530px;
 	width: 800px;
 	height: 1400px;
-	border: 2px solid #7C8CA6;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
 	z-index: 2;
+	background-color: hsla(0, 0%, 84%, 0.15);
 }
 
 .footer {
@@ -87,11 +105,31 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	left: 200px;
 	width: 1460px;
 	height: 200px;
-	border: 2px solid #7C8CA6;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
 	z-index: 2;
-	background-color: #000;
-	color: #fff;
-	font-size: 30px;
+	background-color: hsla(0, 0%, 84%, 0.15);
+}
+/*
+.title-text {
+	padding-top: 10px;
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 800;
+	text-shadow: 1px 1px 2px black, 2px 10px 1em #1B2F50; 
+    color: #243F6A; 
+	opacity: .8;
+}*/
+
+.title-text {
+	padding-top: 10px;
+	font-family: "Impact";
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 800;
+	/* text-shadow: 1px 1px 2px black, 2px 10px 1em #172844; */
+    color: #243F6A; 
+	opacity: .8;
 }
 
 .top5 { /** Заголовок первого Сайдбара  **/
@@ -100,30 +138,37 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	color: #263C6A;
 	font-weight: 1000;
 	text-shadow: 2px 2px 4px #000;
-	opacity: .6;
 }
 
 .top {  /** Заголовок топов **/
 	font-size: 18px;
 	color: #A60709;
-	font-family: Marker Felt;
+	font-family: "Marker Felt";
 }
+
+.top4k {  /** Заголовок топов **/
+	font-size: 22px;
+	font-weight: 800;
+	color: #A60709;
+	font-family: "Marker Felt";
+}
+
 .name { /** Размер содержимого топ5 **/
 	font-size: 18px;
 }
 
 .nick { /** Ники в топ5 **/
-	font-family: FF Trixie, Marker Felt;
 	color: #0C69B4; 
 	font-weight: 700;
+	font-style: italic;
 }
 .number { /** Цифры из топ5 **/
 	font-size: 16px;
 	font-family: Marker Felt;
 }
 .description { /** Описание внизу топ5 **/
-	font-size: 12px;
-	font-family: Marker Felt;
+	font-size: 14px;
+	font-family: "Marker Felt";
 	color: #A60709;
 }
 
@@ -160,7 +205,6 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 
 .colordata { /** Конец новости **/
 	color: #D40000;
-	font-family: Marker Felt;
 }
 
 main {
@@ -169,20 +213,18 @@ main {
 
 .team { /** Начало предворительного состава **/
 	font-size: 16px;
-	font-family: Marker Felt;
+	color: #0C69B4;
 }
 .size-number {  /** Конец предворительного состава **/
-	font-size: 16px;
-	color: #D40000;
+	font-size: 14px;
+	color: #000;
 }
 .click { /** Требование ЛВК начало **/
 	color: #263C6A;
-	font-family: Marker Felt;
 }
 
 .clicker { /** Требование ЛВК конец **/
 	color: #263C6A;
-	font-family: Marker Felt;
 	font-size: 16px;
 	font-weight: 800;
 }
