@@ -85,7 +85,7 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	top: 1720px;
 	margin-bottom: 15px;
 	left: 10px;
-	width: 95.6%;
+	width: 1830px;
 	height: 200px;
 	border: 2px solid #7C8CA6;
 	z-index: 2;
@@ -163,6 +163,9 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	font-family: Marker Felt;
 }
 
+main {
+	min-width: 1200px;
+}
 
 .team { /** Начало предворительного состава **/
 	font-size: 16px;
