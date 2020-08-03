@@ -146,15 +146,31 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	font-family: "Marker Felt";
 }
 
+#top4k {  /** Заголовок топов **/
+	font-size: 22px;
+	font-weight: 800;
+	color: #A60709;
+	font-family: "Marker Felt";
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .top4k {  /** Заголовок топов **/
 	font-size: 22px;
 	font-weight: 800;
 	color: #A60709;
 	font-family: "Marker Felt";
+	
 }
-
 .name { /** Размер содержимого топ5 **/
 	font-size: 18px;
+}
+
+.name1 {
+	text-align: 3px;
+}
+
+#casper {
+	opacity: 0;
 }
 
 .nick { /** Ники в топ5 **/
@@ -188,7 +204,8 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 }
 
 .loss {
-	background-color: #FF0800;
+	background-color: #FF0800; 
+	color: #fff;
 }
 
 .draw {
@@ -197,6 +214,10 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 
 .names { /** Конец "5 последних CW" **/
 	color: #305868;
+}
+
+.loss>.names {
+	color: #fff;
 }
 
 .news { /** Начало новости **/
