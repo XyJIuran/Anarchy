@@ -167,6 +167,13 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 
 .name1 {
 	text-align: 3px;
+	letter-spacing: -1px;
+	padding: 5px 0 0 30px;	
+}
+
+#space {
+	letter-spacing: -1px;
+	padding: 5px 5px 0 10px;	
 }
 
 #casper {
