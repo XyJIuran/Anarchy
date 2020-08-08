@@ -96,6 +96,8 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	border-radius: 20px;
 	z-index: 2;
 	background-color: hsla(0, 0%, 84%, 0.15);
+	overflow: auto;
+	overflow-x: hidden;
 }
 
 .footer {
@@ -146,6 +148,11 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	font-family: "Marker Felt";
 }
 
+#newsclan {
+	overflow: auto;
+	overflow-x: hidden;
+}
+
 #top4k {  /** Заголовок топов **/
 	font-size: 22px;
 	font-weight: 800;
@@ -172,7 +179,7 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 }
 
 #space {
-	letter-spacing: -1px;
+	letter-spacing: 0px;
 	padding: 5px 5px 0 10px;	
 }
 
@@ -202,25 +209,27 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	font-size: 14px;
 	margin: 10px;
 	text-align: center;
+	font-weight:700;
 }
 
 .win { 
-	background-color: #00D500;
+	background-color: /*#00D500;*/#53CA18;
 	color: #ffffff;
 	text-align: center;
 }
 
 .loss {
-	background-color: #FF0800; 
+	background-color: /*#FF0800;*/#AF2828; 
 	color: #fff;
 }
 
 .draw {
 	background-color: #A2ADD0;
+	color: #fff;
 }
 
 .names { /** Конец "5 последних CW" **/
-	color: #305868;
+	color: /*#305868;*/#fff;
 }
 
 .loss>.names {
@@ -255,4 +264,20 @@ main {
 	color: #263C6A;
 	font-size: 16px;
 	font-weight: 800;
+}
+
+.datatime {
+	text-align: right;
+	padding-right: 100px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.bottom {
+	display: block;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 80px;
+	font-size: 14px;
+	font-weight: 700;
 }
