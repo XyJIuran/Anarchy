@@ -25,7 +25,7 @@ ul li {
 	color: #243F6A;
 	text-shadow: 2px 2px 4px #000;
 	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 700;
 	font-family: sans-serif;
 	text-transform: uppercase;
@@ -36,7 +36,7 @@ ul li {
 li a {
 	text-decoration: none;
 	color: #243F6A;
-	font-size: 25px;
+	font-size: 20px;
 	transition: .5s;
 	padding: 10px;
 }
@@ -46,9 +46,10 @@ ul:hover li a {
 }
 
 ul:hover li a:hover { /** Конец горизонтального меню **/
-	font-size: 30px;
+	font-size: 25px;
 	filter: blur(0px);
-	background-color: #FFEBB5;
+	background-color: hsla(312, 100%, 58%, 0.1);
+	border-radius: 20px;
 }
  .sidebar1 {
 	position: absolute;
