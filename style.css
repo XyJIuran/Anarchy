@@ -3,6 +3,15 @@ body {
 	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
 
+* {
+	cursor: url(content/КурсорМеч2.png),pointer
+}
+
+a {
+	cursor: url(content/КурсорСтрела.png),pointer
+}
+}
+
 header {
 	padding-top: 15px;
 }
