@@ -68,7 +68,7 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	top: 700px;
 	left: 1360px;
 	width: 300px;
-	height: 930px;
+	height: 1100px;
 	border: 1px solid rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
 	z-index: 1;
@@ -250,9 +250,10 @@ main {
 }
 
 .team { /** Начало предворительного состава **/
+	text-align: left;
 	font-size: 16px;
 	color: #0C69B4;
-}
+	}
 .size-number {  /** Конец предворительного состава **/
 	font-size: 14px;
 	color: #000;
@@ -287,7 +288,15 @@ main {
 	font-weight: 700;
 }
 
-.slider {
+table {
+
+	text-align: left;
+	padding-left: 30px;
+	font-weight: 900;
+	line-height: 1.3;
+}
+
+/** .slider {
 	margin: 0;
 	padding: 0;
 	top: 0;
@@ -366,3 +375,6 @@ h2.slider {
 	padding: 20px;
 	text-align: center;
 }
+**/
+
+ 
