@@ -68,25 +68,25 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	top: 700px;
 	left: 1360px;
 	width: 300px;
-	height: 1100px;
+	height: 930px;
 	border: 1px solid rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
 	z-index: 1;
 	background-color: hsla(0, 0%, 84%, 0.15);
 }
 
-/*.sidebar3 {
+.sidebar3 {
 	position: absolute;
-	top: 800px;
-	left: 630px;
-	width: 600px;
-	height: 300px;
+	top: 1650px;
+	left: 1360px;
+	width: 300px;
+	height: 450px;
 	border: 1px solid rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
 	z-index: 1;
 	background-color: hsla(0, 0%, 84%, 0.15);
 }
-*/
+
 .main {
 	position: absolute;
 	top: 700px;
@@ -285,4 +285,84 @@ main {
 	padding-top: 80px;
 	font-size: 14px;
 	font-weight: 700;
+}
+
+.slider {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #a1a1a1;
+}
+
+ul.slider li {
+	list-style: none;
+	position: relative;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid black;
+	float: left;
+	box-sizing: border-box;
+	transition: 0.6s;
+	text-align: center;
+	overflow: hidden;
+	filter: opacity(50%);
+}
+
+ul.slider:hover li {
+	width: 10%;
+}
+
+ul.slider li:hover {
+	width: 60%;
+}
+
+ul.slider li.music {
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	background: rgba(76,106,117,0.6);
+	box-sizing: border-box;
+	color: white;
+}
+
+ul.slider li:hover.music {
+	bottom: 0;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+}
+
+ul.slider li:nth-child(1) {
+	background: url(content/1round.jpg);
+	background-size: cover;
+	background-position: left;
+}
+
+ul.slider li:nth-child(2) {
+	background: url(content/2round.jpg);
+}
+
+ul.slider li:nth-child(3) {
+	background: url(content/3round.jpg);
+}
+
+ul.slider li:nth-child(4) {
+	background: url(content/4round.jpg);
+}
+
+ul.slider li:nth-child(5) {
+	background: url(content/5round.jpg);
+}
+
+.slidertitle {
+	font-size: 16px;
+}
+
+h2.slider {
+	padding: 20px;
+	text-align: center;
 }
