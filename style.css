@@ -56,10 +56,10 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	top: 700px;
 	left: 200px;
 	width: 300px;
-	height: 1100px;
+	height: 1000px;
 	border: 1px solid rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
-	z-index: 1;	
+	z-index: 2;	
 	background-color: hsla(0, 0%, 84%, 0.15);
  }
  
@@ -68,22 +68,10 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	top: 700px;
 	left: 1360px;
 	width: 300px;
-	height: 1100px;
+	height: 1300px;
 	border: 1px solid rgba(0, 0, 0, 0.06);
 	border-radius: 20px;
-	z-index: 1;
-	background-color: hsla(0, 0%, 84%, 0.15);
-}
-
-.sidebar3 {
-	position: absolute;
-	top: 1650px;
-	left: 1360px;
-	width: 300px;
-	height: 450px;
-	border: 1px solid rgba(0, 0, 0, 0.06);
-	border-radius: 20px;
-	z-index: 1;
+	z-index: 2;
 	background-color: hsla(0, 0%, 84%, 0.15);
 }
 
@@ -113,19 +101,8 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	z-index: 2;
 	background-color: hsla(0, 0%, 84%, 0.15);
 }
-/*
-.title-text {
-	padding-top: 10px;
-	font-size: 25px;
-	font-style: italic;
-	font-weight: 800;
-	text-shadow: 1px 1px 2px black, 2px 10px 1em #1B2F50; 
-    color: #243F6A; 
-	opacity: .8;
-}*/
 
-.title-text {
-	padding-top: 10px;
+span.title { /** Заголовок блока **/
 	font-family: "Impact";
 	font-size: 25px;
 	font-style: italic;
@@ -135,137 +112,16 @@ ul:hover li a:hover { /** Конец горизонтального меню **/
 	opacity: .8;
 }
 
-.top5 { /** Заголовок первого Сайдбара  **/
-	font-size: 25px;
-	/**color: #243F6A;**/
-	color: #263C6A;
-	font-weight: 1000;
-	text-shadow: 2px 2px 4px #000;
-}
-
-.top {  /** Заголовок топов **/
-	font-size: 18px;
+.titleName { /** Заголовок темы  **/
+	font-size: 16px;
 	color: #A60709;
-	font-family: "Marker Felt";
-}
-
-#newsclan {
-	overflow: auto;
-	overflow-x: hidden;
-}
-
-#top4k {  /** Заголовок топов **/
-	font-size: 22px;
-	font-weight: 800;
-	color: #A60709;
-	font-family: "Marker Felt";
-	border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.top4k {  /** Заголовок топов **/
-	font-size: 22px;
-	font-weight: 800;
-	color: #A60709;
-	font-family: "Marker Felt";
-	
-}
-.name { /** Размер содержимого топ5 **/
-	font-size: 18px;
-}
-
-.name1 {
-	text-align: 3px;
-	letter-spacing: -1px;
-	padding: 5px 0 0 30px;	
-}
-
-#space {
-	letter-spacing: 0px;
-	padding: 5px 5px 0 10px;	
-}
-
-#casper {
-	opacity: 0;
-}
-
-.nick { /** Ники в топ5 **/
-	color: #0C69B4; 
-	font-weight: 700;
+	font-weight: 900;
 	font-style: italic;
 }
-.number { /** Цифры из топ5 **/
-	font-size: 16px;
-	font-family: Marker Felt;
-}
-.description { /** Описание внизу топ5 **/
-	font-size: 14px;
-	font-family: "Marker Felt";
-	color: #A60709;
-}
 
-.cw { /** Начало "5 последних CW" **/
-	color: #747474;
-	background-color: #e4e4e4;
-	border: 1px solid #434343;
-	font-size: 14px;
-	margin: 10px;
-	text-align: center;
-	font-weight:700;
-}
 
-.win { 
-	background-color: /*#00D500;*/#53CA18;
-	color: #ffffff;
-	text-align: center;
-}
-
-.loss {
-	background-color: /*#FF0800;*/#AF2828; 
-	color: #fff;
-}
-
-.draw {
-	background-color: #A2ADD0;
-	color: #fff;
-}
-
-.names { /** Конец "5 последних CW" **/
-	color: /*#305868;*/#fff;
-}
-
-.loss>.names {
-	color: #fff;
-}
-
-.news { /** Начало новости **/
-	font-size: 12px;
-}
-
-.colordata { /** Конец новости **/
-	color: #D40000;
-}
-
-main {
-	min-width: 1200px;
-}
-
-.team { /** Начало предворительного состава **/
-	text-align: left;
-	font-size: 16px;
-	color: #0C69B4;
-	}
-.size-number {  /** Конец предворительного состава **/
-	font-size: 14px;
-	color: #000;
-}
-.click { /** Требование ЛВК начало **/
+.StartDate { /** ДАТА НАЧАЛА CWL ( ОПИСАНИЕ )  **/
 	color: #263C6A;
-}
-
-.clicker { /** Требование ЛВК конец **/
-	color: #263C6A;
-	font-size: 16px;
-	font-weight: 800;
 }
 
 .datatime {
@@ -275,109 +131,65 @@ main {
 	font-weight: 700;
 }
 
-#LinkClan {
+div.StartDate {
+	color: #263C6A;
+	opacity: .8;
+}
+
+#LinkClan { /*Цвет название клана в блоке "Состав на CWL"*/
 	color: #263C6A;
 }
 
-.bottom {
-	display: block;
-	text-align: left;
-	padding-left: 40px;
-	padding-top: 80px;
-	font-size: 14px;
+.topCups { /** Содержание темы  **/
+	font-size: 15px;
 	font-weight: 700;
-}
-
-table {
-
+	font-style: italic;
 	text-align: left;
-	padding-left: 30px;
+	padding-left: 25px;
+	line-height: 2;
+}
+
+
+div b { /** Оформление Никнеймов **/
+	font-size: 15px;
 	font-weight: 900;
-	line-height: 1.3;
+	color: #0C69B4;
 }
 
-th {
-	padding-right: 11px;
-}
-/** .slider {
-	margin: 0;
-	padding: 0;
-	top: 0;
-	left: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #a1a1a1;
+table b { /** Оформление Никнеймов ( Состав на CWL )**/
+	font-size: 14px;
+	font-weight: 900;
+	color: #0C69B4;
 }
 
-ul.slider li {
-	list-style: none;
-	position: relative;
-	width: 20%;
-	height: 100%;
-	border-right: 1px solid black;
-	float: left;
-	box-sizing: border-box;
-	transition: 0.6s;
+.description { /** Описание внизу блоков **/
+	font-size: 13px;
+	font-weight: 700;
+	color: #A60709;
+}
+
+.cw { /*5 последних CW*/
+	color: #747474;
+	background-color: #e4e4e4;
+	border: 1px solid #434343;
+	font-size: 14px;
+	margin: 10px;
 	text-align: center;
-	overflow: hidden;
-	filter: opacity(50%);
+	font-weight:700;
 }
 
-ul.slider:hover li {
-	width: 10%;
-}
-
-ul.slider li:hover {
-	width: 60%;
-}
-
-ul.slider li.music {
-	position: absolute;
-	bottom: -100%;
-	left: 0;
-	width: 100%;
-	background: rgba(76,106,117,0.6);
-	box-sizing: border-box;
-	color: white;
-}
-
-ul.slider li:hover.music {
-	bottom: 0;
-	transition: 0.5s;
-	transition-delay: 0.4s;
-}
-
-ul.slider li:nth-child(1) {
-	background: url(content/1round.jpg);
-	background-size: cover;
-	background-position: left;
-}
-
-ul.slider li:nth-child(2) {
-	background: url(content/2round.jpg);
-}
-
-ul.slider li:nth-child(3) {
-	background: url(content/3round.jpg);
-}
-
-ul.slider li:nth-child(4) {
-	background: url(content/4round.jpg);
-}
-
-ul.slider li:nth-child(5) {
-	background: url(content/5round.jpg);
-}
-
-.slidertitle {
-	font-size: 16px;
-}
-
-h2.slider {
-	padding: 20px;
+.win {  /*5 последних CW*/
+	background-color: /*#00D500;*/#53CA18;
+	color: #ffffff;
 	text-align: center;
 }
-**/
 
- 
+.loss { /*5 последних CW*/
+	background-color: /*#FF0800;*/#AF2828; 
+	color: #fff;
+}
+
+.draw { /*5 последних CW*/
+	background-color: #A2ADD0;
+	color: #fff;
+}
