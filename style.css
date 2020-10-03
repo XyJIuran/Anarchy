@@ -137,6 +137,13 @@ div.StartDate {
 }
 
 #LinkClan { /** Цвет название клана в блоке "Состав на CWL" **/
+	font-size: 18px;
+	color:#0C69B4;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#LinkName { /** Цвет название клана в блоке "Состав на CWL" **/
 	font-size: 14px;
 	color:#0C69B4;
 	font-weight: 900;
