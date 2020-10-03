@@ -136,8 +136,15 @@ div.StartDate {
 	opacity: .8;
 }
 
-#LinkClan { /*Цвет название клана в блоке "Состав на CWL"*/
-	color: #263C6A;
+#LinkClan { /** Цвет название клана в блоке "Состав на CWL" **/
+	font-size: 14px;
+	color:#0C69B4;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+#LinkClan:hover { 
+	color: #A60709;
 }
 
 .topCups { /** Содержание темы  **/
