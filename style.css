@@ -138,7 +138,7 @@ div.StartDate {
 
 #LinkClan { /** Цвет название клана в блоке "Состав на CWL" **/
 	font-size: 18px;
-	color:#0C69B4;
+	color:#263C6A;
 	font-weight: 700;
 	text-decoration: none;
 }
@@ -206,4 +206,16 @@ table b { /** Оформление Никнеймов ( Состав на CWL )*
 .draw { /*5 последних CW*/
 	background-color: #A2ADD0;
 	color: #fff;
+}
+
+.FooterDesign {
+	font-size: 12px;
+	color: #747474;
+	text-align: left;
+	padding: 20px 20px;
+
+}
+
+img {
+	border-radius: 3%;
 }
