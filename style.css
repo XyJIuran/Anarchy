@@ -1,46 +1,221 @@
-.content {
-	display: grid;
-	grid-template-areas:
-	 "header header header"
- 	 "leftSidebar main rightSidebar"
- 	 "footer footer footer";
-	grid-template-columns: 1.2fr 2fr 1.2fr;
- 	grid-template-rows: 200px 1300px 200px;
- 	margin: 10px;
- 	padding: 10px;
+body {
+	font-size: 10px;
+	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
 }
 
-.header {
-	border: 1px solid #000;
-	grid-area: header;
-	margin: 10px;
- 	padding: 10px;
+header {
+	padding-top: 15px;
 }
 
-.leftSidebar {
-	border: 1px solid #000;
-	grid-area: leftSidebar;
-	margin: 10px;
- 	padding: 10px;
+nav { /** Начало горизонтального меню **/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 5vh;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li {
+	padding: 0 20px;
+	color: #243F6A;
+	text-shadow: 2px 2px 4px #000;
+	font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	transition: .5s;
+	list-style-type: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #243F6A;
+	font-size: 20px;
+	transition: .5s;
+	padding: 10px;
+}
+
+ul:hover li a {
+	filter: blur(5px);
+}
+
+ul:hover li a:hover { /** Конец горизонтального меню **/
+	font-size: 25px;
+	filter: blur(0px);
+	background-color: hsla(312, 100%, 58%, 0.1);
+	border-radius: 20px;
+}
+ .sidebar1 {
+	position: absolute;
+	top: 700px;
+	left: 200px;
+	width: 300px;
+	height: 1000px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
+	z-index: 2;	
+	background-color: hsla(0, 0%, 84%, 0.15);
+ }
+ 
+ .sidebar2 {
+	position: absolute;
+	top: 700px;
+	left: 1360px;
+	width: 300px;
+	height: 1400px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
+	z-index: 2;
+	background-color: hsla(0, 0%, 84%, 0.15);
 }
 
 .main {
-	border: 1px solid #000;
-	grid-area: main;
-	margin: 10px;
- 	padding: 10px;
-}
-
-.rightSidebar {
-	border: 1px solid #000;
-	grid-area: rightSidebar;
-	margin: 10px;
- 	padding: 10px;
+	position: absolute;
+	top: 700px;
+	left: 530px;
+	width: 800px;
+	height: 1400px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
+	z-index: 2;
+	background-color: hsla(0, 0%, 84%, 0.15);
+	overflow: auto;
+	overflow-x: hidden;
 }
 
 .footer {
-	border: 1px solid #000;
-	grid-area: footer;
+	position: absolute;
+	top: 2120px;
+	margin-bottom: 15px;
+	left: 200px;
+	width: 1460px;
+	height: 200px;
+	border: 1px solid rgba(0, 0, 0, 0.06);
+	border-radius: 20px;
+	z-index: 2;
+	background-color: hsla(0, 0%, 84%, 0.15);
+}
+
+span.title { /** Заголовок блока **/
+	font-family: "Impact";
+	font-size: 25px;
+	font-style: italic;
+	font-weight: 800;
+	/* text-shadow: 1px 1px 2px black, 2px 10px 1em #172844; */
+    color: #243F6A; 
+	opacity: .8;
+}
+
+.titleName { /** Заголовок темы  **/
+	font-size: 16px;
+	color: #A60709;
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+.StartDate { /** ДАТА НАЧАЛА CWL ( ОПИСАНИЕ )  **/
+	color: #263C6A;
+}
+
+.datatime {
+	text-align: right;
+	padding-right: 100px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+div.StartDate {
+	color: #263C6A;
+	opacity: .8;
+}
+
+#LinkClan { /** Цвет название клана в блоке "Состав на CWL" **/
+	font-size: 18px;
+	color:#263C6A;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+#LinkName { /** Цвет название клана в блоке "Состав на CWL" **/
+	font-size: 14px;
+	color:#0C69B4;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+#LinkClan:hover { 
+	color: #A60709;
+}
+
+.topCups { /** Содержание темы  **/
+	font-size: 15px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: left;
+	padding-left: 25px;
+	line-height: 2;
+}
+
+
+div b { /** Оформление Никнеймов **/
+	font-size: 15px;
+	font-weight: 900;
+	color: #0C69B4;
+}
+
+table b { /** Оформление Никнеймов ( Состав на CWL )**/
+	font-size: 14px;
+	font-weight: 900;
+	color: #0C69B4;
+}
+
+.description { /** Описание внизу блоков **/
+	font-size: 13px;
+	font-weight: 700;
+	color: #A60709;
+}
+
+.cw { /*5 последних CW*/
+	color: #747474;
+	background-color: #e4e4e4;
+	border: 1px solid #434343;
+	font-size: 14px;
 	margin: 10px;
- 	padding: 10px;
+	text-align: center;
+	font-weight:700;
+}
+
+.win {  /*5 последних CW*/
+	background-color: /*#00D500;*/#53CA18;
+	color: #ffffff;
+	text-align: center;
+}
+
+.loss { /*5 последних CW*/
+	background-color: /*#FF0800;*/#AF2828; 
+	color: #fff;
+}
+
+.draw { /*5 последних CW*/
+	background-color: #A2ADD0;
+	color: #fff;
+}
+
+.FooterDesign {
+	font-size: 12px;
+	color: #747474;
+	text-align: left;
+	padding: 20px 20px;
+
+}
+
+img {
+	border-radius: 2%;
 }
