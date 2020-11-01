@@ -201,23 +201,28 @@ table b { /** Оформление Никнеймов ( Состав на CWL )*
 	border: 1px solid #434343;
 	font-size: 14px;
 	margin: 10px;
+	padding: 3px;
 	text-align: center;
 	font-weight: 700;
 }
 
 .win {  /*5 последних CW*/
 	background-color: /*#00D500;*/#53CA18;
-	color: #ffffff;
-	text-align: center;
-	text-shadow: 1px 0 1px #000, 
+	color:#fff!important;
+	text-shadow: 1px 0 0px #000, 
 	0 2px 1px #000, 
 	-1px 0 1px #000, 
-	0 -1px 1px #000;
+	0 -1px 0px #000;
+	text-align: center;
 }
 
 .loss { /*5 последних CW*/
 	background-color: /*#FF0800;*/#AF2828; 
-	color: #fff;
+	color:#fff!important;
+	text-shadow: 1px 0 1px #000, 
+	0 2px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
 }
 
 .draw { /*5 последних CW*/
