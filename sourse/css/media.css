@@ -1,13 +1,13 @@
 @media (max-width: 1199px){
-	htme{
-		font-size: 8px;
+	html{
+		font-size: 10px;
 	}
 
 }
 
 @media (max-width: 991px){
-htme{
- font-size: 7px;
+html{
+ font-size: 9px;
  }
  .visible-lg{
   display: none;
@@ -50,5 +50,19 @@ htme{
 
  .social-links a{
  	font-size: 2rem;
+ }
+}
+
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 650px) {
+	
+}
+
+@media (max-width: 480px) {
+ .main-text span{
+ 	font-size: 1.2rem;
  }
 }

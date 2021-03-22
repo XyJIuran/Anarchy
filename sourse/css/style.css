@@ -4,6 +4,8 @@
 
 html{
 	font-size: 10px;
+	scroll-behavior: smooth;
+
 }
 
 body{
@@ -83,6 +85,9 @@ body{
 
  .main-text span{
  	display: inline-block;
+ 	font-size: 1.5rem;
+ 	font-weight: 500;
+ 	text-transform: uppercase;
  }
 
  .main-text h1{
@@ -109,6 +114,11 @@ body{
  	vertical-align: middle;
  	margin-right: 10px;
  }
+
+  .main-text p{
+  	font-size: 1.4rem;
+
+  }
 
  .main-arrow{
  	height: 15vh;
@@ -145,7 +155,8 @@ body{
 
 .table-header span{
 	text-transform: uppercase;
-	font-size: 2rem;
+	font-size: 1.6rem;
+	font-weight: 500;
 	color: #9fa4af;
 }
 
@@ -177,10 +188,6 @@ body{
 	color: #9fa4af;
 }
 
-.table-subtitle {
-
-}
-
 .price-tags{
 	display: flex; 
 	justify-content: space-around;
@@ -207,7 +214,9 @@ body{
 }
 
 .price-tag span{
+	color: #9fa4af;
 	font-size: 1.1rem;
+	font-weight: 500;
 	text-transform: uppercase;
 	margin: 3rem auto 1rem;
 }
@@ -249,6 +258,7 @@ body{
 .price-btn:hover{
 	background-color: #6e45e2;
 	color: #fff;
+  	box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.3);
 }
 
 

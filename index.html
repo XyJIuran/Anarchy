@@ -50,7 +50,7 @@
 				<h1>Pricing Table</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doconsectetur adipisicing elit, sed do.</p>
 			</div>
-			<a href="https://google.com" target="_blank" class="main-arrow">
+			<a href="#page" id="link" target="_blank" class="main-arrow">
 				<div class="arrow-down">
 					<img src="img/arrow.png" alt="down">
 				</div>
@@ -59,7 +59,7 @@
 
 		<div class="table">
 			<div class="table-header">
-				<span class="table-subtitle">Misocial</span>
+				<span id="page" class="table-subtitle">Misocial</span>
 				<h2>Select a Plan</h2>
 				<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Doloremque, labore.</p>
 			</div>	
@@ -149,8 +149,18 @@
 				close.on('click', function(event) {
 					event.preventDefault();
 					menu.toggleClass('m-menu__active');
+
+						type="text/javascript">
+  $(document).ready(function(){
+  $("#link").on("click","a", function (event) {
+  event.preventDefault();
+  var id = $(this).attr('href'),
+  top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 2500);
 				});
 			});
+
+			
 		</script>
 	</body>
 </html>
