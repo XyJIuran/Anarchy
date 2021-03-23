@@ -12,7 +12,7 @@
 </head>
 	<body>
 
-	<!-- Бургер меню  -->
+	<!-- Бургер меню  моб.версия-->
 		<ul class="m-menu">
 			<li class="close-menu">&times;</li>
 			<li><a href="#" class="menu-link">Home</a></li>
@@ -50,7 +50,7 @@
 				<h1>Pricing Table</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doconsectetur adipisicing elit, sed do.</p>
 			</div>
-			<a href="#page" id="link" target="_blank" class="main-arrow">
+			<a href="#page" class="main-arrow">
 				<div class="arrow-down">
 					<img src="img/arrow.png" alt="down">
 				</div>
@@ -149,17 +149,18 @@
 				close.on('click', function(event) {
 					event.preventDefault();
 					menu.toggleClass('m-menu__active');
+				});
+			});
 
-						type="text/javascript">
+					type="text/javascript">
   $(document).ready(function(){
   $("#link").on("click","a", function (event) {
   event.preventDefault();
   var id = $(this).attr('href'),
   top = $(id).offset().top;
-  $('body,html').animate({scrollTop: top}, 2500);
-				});
-			});
-
+  $('body,html').animate({scrollTop: top}, 5000);
+  });
+});
 			
 		</script>
 	</body>
