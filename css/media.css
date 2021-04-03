@@ -109,9 +109,7 @@
 	}
 	.five-top{
 		font-size: 0.55rem;
-		
 	}
-
 	.five-top span{
 		font-size: 0.55rem;
 	}
@@ -119,7 +117,7 @@
 		font-size: 0.8rem;
 	}
 	.menu-li{
-		font-size: 1.2rem;
+		font-size: 0.9rem;
 	}
 	#LinkName{
 		font-size: 0.6rem;
@@ -141,9 +139,18 @@
 
 
 @media (max-width: 1024px){
-	.menu-li{
+.menu {
+
+}
+.desktop-menu {
+}
+.menu-li {
+	display: flex;
+	justify-content: space-between;
+}
+.link {
 	font-size: 0.8rem;
- }
+}
  .content{
  	display: flex;
  	flex-direction: column;
@@ -168,4 +175,7 @@
 	padding-bottom: 2rem;
 	order: 2;
  }
+ 	.menu-li{
+		font-size: 1rem;
+	}
 }
