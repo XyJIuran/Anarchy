@@ -1,0 +1,171 @@
+@media screen and (max-width: 1750px){
+	.topCups{
+		font-size: 0.7rem;
+	}
+	.title{
+		font-size: 1.2rem;
+	}
+	.five-top{
+		font-size: 0.8rem;
+	}
+
+	.cw{
+		font-size: 0.6rem;
+	}
+
+	.five-top span{
+		font-size: 0.7rem;
+	}
+	.sub-title{
+		font-size: 0.8rem;
+	}
+	.sub-title a{
+		font-size: 1rem;
+	}
+	.menu-li{
+		font-size: 1.2rem;
+	}
+	#LinkName{
+		font-size: 0.8rem;
+	}
+	.time{
+		font-size: 0.8rem;
+	}
+	.size-number{
+		font-size: 0.8rem;
+	}
+	.description{
+		font-size: 0.7rem;
+	}
+
+}
+
+@media screen and (max-width: 1465px){
+	.cw{
+		font-size: 0.5rem;
+		
+	}
+	.sub-title{
+		font-size: 0.6rem;
+	}
+	.description{
+		font-size: 0.6rem;
+	}
+	.topCups{
+		font-size: 0.6rem;
+	}
+	.title{
+		font-size: 1rem;
+	}
+	.five-top{
+		font-size: 0.6rem;
+		padding-left: 5%;
+	}
+
+	.five-top span{
+		font-size: 0.6rem;
+	}
+	.sub-title a{
+		font-size: 0.7rem;
+	}
+	.menu-li{
+		font-size: 1.2rem;
+	}
+	#LinkName{
+		font-size: 0.6rem;
+	}
+	.time{
+		font-size: 0.6rem;
+	}
+	.size-number{
+		font-size: 0.6rem;
+	}
+	img.content-img{
+		width: 70%;
+		height: 200px;
+	}
+	.sidebar-left{
+		text-align: center;
+	}
+
+}
+
+
+@media screen and (max-width: 1280px){
+	.cw{
+		font-size: 0.6rem;
+	}
+	.sub-title{
+		font-size: 0.7rem;
+	}
+	.description{
+		font-size: 0.6rem;
+	}
+	.topCups{
+		font-size: 0.6rem;
+	}
+	.title{
+		font-size: 1rem;
+	}
+	.five-top{
+		font-size: 0.55rem;
+		
+	}
+
+	.five-top span{
+		font-size: 0.55rem;
+	}
+	.sub-title a{
+		font-size: 0.8rem;
+	}
+	.menu-li{
+		font-size: 1.2rem;
+	}
+	#LinkName{
+		font-size: 0.6rem;
+	}
+	.time{
+		font-size: 0.6rem;
+	}
+	.size-number{
+		font-size: 0.6rem;
+	}
+	img.content-img{
+		width: 70%;
+		height: 200px;
+	}
+	hr{
+		padding: 1rem 0 0 0;
+	}
+}
+
+
+@media (max-width: 1024px){
+	.menu-li{
+	font-size: 0.8rem;
+ }
+ .content{
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+
+ }
+ .sidebar-left{
+	width: 80%;
+	height: 100%;
+	padding-bottom: 2rem;
+	order: 1;
+ }
+ .main-news{
+ 	width: 80%;
+	height: 100%;
+	padding-bottom: 2rem;
+	order: 3;
+ }
+ .sidebar-right{
+	width: 80%;
+	height: 100%;
+	padding-bottom: 2rem;
+	order: 2;
+ }
+}
